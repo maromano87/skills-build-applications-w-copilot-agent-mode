@@ -1,0 +1,133 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #22223b;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  text-align: center;
+}
+
+.octofit-logo {
+  height: 48px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: #22223b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f2e9e4;
+}
+
+.App-link, a {
+  color: #4ea8de;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.App-link:hover, a:hover {
+  color: #4361ee;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(90deg, #22223b 0%, #4ea8de 100%);
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #f2e9e4 !important;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+.navbar-nav .nav-link {
+  color: #f2e9e4 !important;
+  margin-right: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  background: #4ea8de;
+  color: #22223b !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #22223b;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #f2e9e4;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+th {
+  background: #4ea8de;
+  color: #fff;
+  font-weight: 600;
+}
+tr:nth-child(even) {
+  background: #e0e1dd;
+}
+tr:hover {
+  background: #b5c9d6;
+}
+
+/* Buttons */
+button, .btn {
+  background: linear-gradient(90deg, #4ea8de 0%, #4361ee 100%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 0.25rem;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(34,34,59,0.08);
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #4361ee 0%, #4ea8de 100%);
+  color: #fff;
+}
+
+/* Container */
+.container {
+  background: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(34,34,59,0.10);
+  padding: 2rem 2.5rem;
+  margin-bottom: 2rem;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
